@@ -1,0 +1,90 @@
+:root {
+  font-size: 17px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Tahoma;
+}
+
+.page {
+  display: flex;
+  align-items: left;
+}
+
+@media (max-width: 1000px) {
+  .page {
+    flex-wrap: wrap;
+  }
+}
+
+.left,
+.right {
+  width: 50%;
+}
+
+@media (max-width: 1000px) {
+
+  .left,
+  .right {
+    width: 100%;
+  }
+}
+
+.left {
+  position: fixed;
+  background: url(aboutpic.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+@media (max-width: 1000px) {
+
+  .left {
+    position: relative;
+  }
+}
+
+.right {
+  margin-left: 50%;
+  min-height: 100vh;
+  background: white;
+  padding: 3rem;
+  font-family: tahoma;
+}
+
+.right p {
+  font-size: 1rem;
+  line-height: 1.7rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+@media (max-width: 990px) {
+
+  .page {
+    display: block;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .right {
+    background: white;
+    font-family: tahoma;
+    width: 100%;
+    margin-left: 0%;
+  }
+
+
+
+}
